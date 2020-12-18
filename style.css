@@ -1,0 +1,164 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  font-family: "Andika";
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containt {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/*movies cards*/
+
+.moviecard {
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.moviecard:hover {
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(5, 5, 5, 1) 50%,
+    rgba(23, 23, 23, 1) 100%
+  );
+}
+
+.poster_image {
+  width: 220px;
+  height: 330px;
+}
+
+.poster {
+  width: 220px;
+  height: 330px;
+}
+
+.moviedetais p {
+  margin: 0;
+  padding: 2px 0px 0px 5px;
+}
+
+.moviename {
+  font-size: 16px;
+  width: 200px;
+}
+
+.moviedate {
+  font-size: 14px;
+}
+
+.moviecard:hover {
+  cursor: pointer;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+/* nav and stickly class at the same time */
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav__logo {
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: var(--color-primary-darker);
+  color: #333;
+}
+
+.nav__not--active {
+  opacity: 0.3;
+}
